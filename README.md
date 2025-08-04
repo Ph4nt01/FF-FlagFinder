@@ -1,32 +1,32 @@
 # FF - FlagFinder
 
-**FF - FlagFinder** is a CLI tool to extract CTF-style flags from authenticated pages using cookies, headers, or session files. Ideal for CTF players and pentesters automating post-authentication access.
+**FF - FlagFinder** is a CLI tool to extract flags from authenticated pages using cookies, headers, or session files.
 
 ---
 
-## 🎯 Features
+## 🚀 Features
 
-- 🔐 Supports authenticated requests using:
-  - Session file (from [LP-LoginParser](https://github.com/Ph4nt01/LP-LoginParser))
+- Supports authenticated requests using:
+  - .json Session file (from [LAS-LoginAuthSessionizer](https://github.com/Ph4nt01/LAS-LoginAuthSessionizer)
   - Custom cookies and headers
-- 🎯 Flexible flag detection:
+- Flexible flag detection:
   - Exact flag match
   - Regex pattern match
-  - Auto-detect common CTF flag formats
-- 📂 Saves response HTML (`debug.html`)
-- 📝 Saves detected flag(s) to file
+  - Auto-detect common CTF flag formats(if not using -f FLAG option)
+- Saves response HTML to (`debug.html`)
+- Saves detected flag(s) to (`--output <YourFile>`)
 
 ---
 
 ## 📦 Installation
 
-### ✅ Install via `pipx` (recommended)
+### Using `pipx` (recommended)
 
 ```bash
 pipx install ff-flagfinder
 ````
 
-### Or via pip:
+### Using pip:
 
 ```bash
 pip install ff-flagfinder
@@ -34,7 +34,7 @@ pip install ff-flagfinder
 
 ---
 
-## 🚀 Usage Examples
+## 🧪 Usage Examples
 
 ### 🔍 Exact Flag Match
 
@@ -65,14 +65,14 @@ ff -fu https://target.com/flag -f HTB{.*} \
 
 ---
 
-## 🛠 Options
+## 🛠 CLI Options
 
 |Option|Description|
 |---|---|
 |`-fu`, `--flagurl`|URL to the page where the flag is located (required)|
 |`-f`, `--flag`|Flag or regex pattern to match|
 |`-r`, `--regex`|Treat `-f` as a regex pattern|
-|`-s`, `--session`|JSON session file (cookies/headers from LP-LoginParser)|
+|`-s`, `--session`|.json session file|
 |`-ck`, `--cookie`|Custom cookies (e.g., `sessionid=abc123`)|
 |`-hd`, `--header`|Custom headers (e.g., `"User-Agent: Firefox"`)|
 |`-o`, `--output`|Output file name (default: `flag.txt`)|
@@ -96,27 +96,24 @@ If no `--flag` is provided, it searches for:
 
 ---
 
-## 📁 Output Files
-
-- `debug.html` → full response content
-    
-- `flag.txt` → extracted flag(s)
-    
-
----
-
-## 📜 License
-
-Licensed under the [MIT License](https://chatgpt.com/g/g-JtV1tF7gf-git-expert-ugithub-gitlabu/c/LICENSE)
-
----
-
-## 👨‍💻 Author
-
-Built by [Your Name](https://github.com/yourusername)  
-🔗 Project repo: [github.com/yourusername/ff-flagfinder](https://github.com/yourusername/ff-flagfinder)
+## 📁 Output Example
 
 ```
+FF-FlagFinder
 
-Let me know if you want help publishing it to PyPI or writing a GitHub Actions CI/CD for it 🚀
+
+
+[+] SUCCESS: Flag found!
+
+
+Flag saved to: [flag.txt]
+
+Response content saved to: [debug.html]
+```
+
+---
+
+## 📜 Author
+
+[Ph4nt01](https://github.com/Ph4nt01)
 ```
