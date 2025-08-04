@@ -28,7 +28,7 @@ def parse_args():
     parser.add_argument("-o", "--output", metavar="", default="flag.txt", help="Name of the output file")
     parser.add_argument("-ck", "--cookie", metavar="", nargs="*", help="Cookies (key=value)")
     parser.add_argument("-hd", "--header", metavar="", nargs="*", help="Headers (key:value)")
-    parser.add_argument("-s", "--session", metavar="", help="Session file from [https://github.com/Ph4nt01/LP-LoginParser] tool")
+    parser.add_argument("-s", "--session", metavar="", help=".json Session file")
     parser.add_argument("-r", "--regex", action="store_true", help="Treat -f as a regex pattern")
     
     return parser.parse_args()
