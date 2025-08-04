@@ -113,6 +113,23 @@ Response content saved to: [debug.html]
 
 ---
 
+## 📂 Project Structure
+
+```
+FF-FlagFinder/
+├── ff/
+│   ├── __init__.py
+│   └── cli.py
+├── README.md
+├── LICENSE
+├── setup.py
+├── pyproject.toml
+├── requirements.txt
+├── .gitignore
+```
+
+---
+
 ## 📜 Author
 
 [Ph4nt01](https://github.com/Ph4nt01)
