@@ -116,4 +116,3 @@ Response content saved to: [debug.html]
 ## 📜 Author
 
 [Ph4nt01](https://github.com/Ph4nt01)
-```
