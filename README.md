@@ -62,7 +62,22 @@ ff -fu https://target.com/flag -f HTB{.*} \
    -hd "User-Agent: Mozilla/5.0" \
    -r
 ```
+---
 
+## 📁 Output Example
+
+```
+FF-FlagFinder
+
+
+
+[+] SUCCESS: Flag found!
+
+
+Flag saved to: [flag.txt]
+
+Response content saved to: [debug.html]
+```
 ---
 
 ## 🛠 CLI Options
@@ -92,24 +107,6 @@ If no `--flag` is provided, it searches for:
 - `picoCTF{.*?}`
     
 - `AKASEC{.*?}`
-    
-
----
-
-## 📁 Output Example
-
-```
-FF-FlagFinder
-
-
-
-[+] SUCCESS: Flag found!
-
-
-Flag saved to: [flag.txt]
-
-Response content saved to: [debug.html]
-```
 
 ---
 
