@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ff-flagfinder",
-    version="1.0.0",
+    version="1.0.1",
     description="FF-FlagFinder: Extract flags from authenticated pages using session, cookies, or headers.",
     author="[Ph4nt01]",
     author_email="ph4nt0.84@gmail.com",
